@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Playfair+Display:wght@400;500;600;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 10px 0px;
+  margin: auto;
+}
+
+section{
+  padding: 10px;
+}
+
+/*navbar부터 차근차근 해보자*/
+.navbar{
+  position: fixed;
+  width: 100%;
+  padding: 0px 8px;
+  margin: auto;
+  background-color: #D6D98B;
+  font-family: 'Playfair Display', serif;
+}
+
+.navbar .max-width{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo{
+  font-size: 30px;
+  color: #fff;
+  font-weight: 600;
+  width:100%;
+  margin: auto;
+}
+
+.navbar .logo span:hover{
+  color: olivedrab;
+}
+
+.navbar .menu li{
+  display: inline-block;
+  list-style: none;
+}
+
+.navbar .menu li a{
+  color: #fff;
+  text-decoration: none;
+  font-weight:600;
+  margin-left: 8px;
+  padding: 8px;
+}
+
+.navbar .menu li a:hover{
+  color:olivedrab;
+  font-weight: 800;
+}
+
+/*여기는 home section*/
+.home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("images/home_darker.jpg") center;
+  background-size: 100%;
+  background-color: #D6D98B;
+  height: 100vh;
+  color: black;
+  font-family:'Nanum Myeongjo', serif;
+}
+
+.home .max-width{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home .home-content{
+  font-size: 30px;
+  text-align: center;
+  font-weight: 550;
+  background: beige;
+  border-radius: 10px;
+  padding: 20px 50px;
+}
+
+.home .home-content .text-head span{
+  color:black;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.home .home-content .text-head span:hover{
+  color: olivedrab;
+  cursor: pointer;
+}
+
+.home .home-content .text-des{
+  font-size: 18px;
+  margin-top: 8px;
+  color: #312B29;
+  font-weight: 500;
+}
+
+.home .home-content .text-des:hover{
+  color: olivedrab;
+  cursor: pointer;
+}
+
+button{
+  border: none;
+  border-radius: 8px;
+  padding: 5px 20px;
+  background:#D6D98B;
+  font-size: 15px;
+  color:#312B29;
+  font-weight: 800;
+  font-family:'Nanum Myeongjo', serif;
+  margin-top: 8px;
+}
+
+button:hover{
+  color:beige;
+  cursor: pointer;
+  background:#312B29;
+}
+
+/*about me*/
+.aboutMe{
+  font-family:'Nanum Myeongjo', serif;
+  background: beige;
+}
+
+.aboutMe .about-title {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  padding-bottom: 8px;
+  font-size:35px;
+  font-weight:600;
+  color:olivedrab;
+}
+
+.aboutMe .about-title:hover{
+  cursor: pointer;
+  color: #312B29;
+}
+
+.aboutMe .about-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutMe .about-content .about-image{
+  width:100%;
+}
+
+.aboutMe .about-content .about-image img{
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  margin: 10px 20px 10px 50px;
+  border-radius: 20px;
+}
+
+.aboutMe .about-content .about-image img:hover{
+  opacity:0.8;
+  cursor: pointer;
+}
+
+.aboutMe .about-content .about-text{
+  width:100%;
+}
+
+.aboutMe .about-content .about-text .about-start{
+ font-size: 20px; 
+ font-weight: 600;
+ margin-bottom: 10px;
+}
+
+.aboutMe .about-content .about-text p{
+  font-size: 15px;
+  padding: 10px;
+  margin-right:20px;
+}
+
+.about-des span {
+  font-weight: 800;
+  color: darkolivegreen;
+}
+
+.aboutMe .about-text .about-start span{
+  color:black;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.aboutMe .about-text .about-start span:hover{
+  color: olivedrab;
+  cursor: pointer;
+}
+
+/*fav*/
+.fav{
+  font-family:'Nanum Myeongjo', serif;
+  background: #fff;
+}
+
+.fav .fav-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.fav .fav-title {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  padding-bottom: 20px;
+  font-size:35px;
+  font-weight:600;
+  color:olivedrab;
+}
+
+.fav .fav-title:hover{
+  cursor: pointer;
+  color: #312B29;
+}
+
+.fav .fav-content .fav-image{
+  width:100%;
+}
+
+.fav-image{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fav-image img{
+  width: 300px;
+  height: 300px;
+  object-fit:cover;
+  border-radius: 20px;
+  margin-left:10px;
+  width: 100%;
+}
+
+.fav .fav-content .fav-image img:hover{
+  opacity:0.8;
+  cursor: pointer;
+}
+
+.fav .fav-content .fav-text{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight:bold;
+  color:#312B29;
+  margin-bottom: 20px;
+}
+
+/*contact*/
+.contact{
+  font-family:'Nanum Myeongjo', serif;
+  background: beige;
+}
+
+.contact .contact-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .contact-title {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  padding-bottom: 10px;
+  font-size:35px;
+  font-weight:600;
+  color:olivedrab;
+  margin-top: 50px;
+}
+
+.contact .contact-title:hover{
+  cursor: pointer;
+  color: #312B29;
+}
+
+.contact .contact-content p{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color:#312B29;
+  font-weight: 600;
+}
+
+input[type=text], textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 6px;
+}
+
+.contact .column {
+ text-align: center;
+ font-weight: 700;
+ color:darkgoldenrod
+}
+
+.contact .column input{
+  border-radius: 10px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.contact .column input:hover{
+  cursor: pointer;
+}
+
+.column {
+  margin-bottom: 100px;
+}
+
+/*footer*/
+footer {
+  font-family: 'Playfair Display', serif;
+  background: #D6D98B;
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+}
